@@ -1,0 +1,193 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5"
+    android:id="@+id/card_layout">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- TOP TRIP IMAGE -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+
+            <ImageView
+                android:id="@+id/imgTrip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_top_image"
+                android:src="@drawable/akka" />
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_margin="16dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_back"
+                android:background="@drawable/circle_white"
+                android:layout_gravity="top|start" />
+
+            <ImageView
+                android:id="@+id/btnSave"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_margin="16dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_save"
+                android:background="@drawable/circle_white"
+                android:layout_gravity="top|end" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/top_curve"
+                android:layout_gravity="bottom"/>
+        </FrameLayout>
+
+        <!-- WHITE ROUNDED DETAILS CONTAINER -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_rounded_top"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/txtDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <!-- Date + Category -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/12/2025"
+                    android:textColor="#777" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" • "
+                    android:textColor="#777" />
+
+                <TextView
+                    android:id="@+id/txtCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adventure"
+                    android:textColor="#777" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingTop="20dp" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A beautiful trip to..."
+                android:textColor="#555"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="6dp" />
+
+            <!-- =============================== -->
+            <!-- PRICE + BUTTON (BOTTOM SECTION) -->
+            <!-- =============================== -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="26dp">
+
+                <!-- LEFT: TOTAL PRICE -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price Per Person"
+                        android:textColor="#777"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <!-- RIGHT: BOOK BUTTON -->
+                <Button
+                    android:id="@+id/btnBook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Trip"
+                    android:textAllCaps="false"
+                    android:background="@drawable/rounded_button"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="#A8A8A8" />
+
+            <EditText
+                android:id="@+id/edtComment"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:inputType="text"
+                android:hint="Send a comment for us about the trip"
+                android:padding="8dp"
+                android:paddingStart="16dp"
+                android:background="@drawable/edittext_bg"/>
+
+            <Button
+                android:id="@+id/btnComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Submit Comment"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
