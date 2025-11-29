@@ -120,46 +120,6 @@ public class SearchActivity extends AppCompatActivity {
         });
     }
 
-//    private void filterTripsByDate() {
-//        String selectedDateStr = edtTripDate.getText().toString().trim();
-//        if (selectedDateStr.isEmpty()) {
-//            Toast.makeText(this, "Please select a date", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//
-//        // Parse selected date from EditText
-//        SimpleDateFormat sdf = new SimpleDateFormat("d/M/yyyy"); // day/month/year
-//        Date selectedDate;
-//        try {
-//            selectedDate = sdf.parse(selectedDateStr);
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//            Toast.makeText(this, "Invalid date format", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//
-//        Calendar calSelected = Calendar.getInstance();
-//        calSelected.setTime(selectedDate);
-//
-//        ArrayList<Trip> filteredTrips = new ArrayList<>();
-//        for (Trip trip : tripsFromPrefs) {
-//            Date tripDate = trip.getDate();
-//            Calendar calTrip = Calendar.getInstance();
-//            calTrip.setTime(tripDate);
-//
-//            // Compare day, month, year
-//            if (calTrip.get(Calendar.DAY_OF_MONTH) == calSelected.get(Calendar.DAY_OF_MONTH) &&
-//                    calTrip.get(Calendar.MONTH) == calSelected.get(Calendar.MONTH) &&
-//                    calTrip.get(Calendar.YEAR) == calSelected.get(Calendar.YEAR)) {
-//                filteredTrips.add(trip);
-//            }
-//        }
-//
-//        // Update RecyclerView
-//        TripCardAdapter newAdapter = new TripCardAdapter(filteredTrips);
-//        recycler.setAdapter(newAdapter);
-//    }
-
     private void filterTripsByDate() {
         String selectedDateStr = edtTripDate.getText().toString().trim();
         if (selectedDateStr.isEmpty()) {
@@ -190,7 +150,6 @@ public class SearchActivity extends AppCompatActivity {
 
         for (Trip trip : tripsFromPrefs) {
 
-            // DATE MATCH
             Calendar calTrip = Calendar.getInstance();
             calTrip.setTime(trip.getDate());
             boolean dateMatch =
@@ -200,7 +159,6 @@ public class SearchActivity extends AppCompatActivity {
 
             if (!dateMatch) continue;
 
-            // BOOKING MATCH (if selected)
             if (filterBooked != null) {
                 if (trip.isBooked() != filterBooked) continue;
             }
