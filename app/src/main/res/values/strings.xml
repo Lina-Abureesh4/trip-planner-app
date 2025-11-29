@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Trip_Planner</string>
+    <string name="home">Home</string>
+    <string name="saved">Saved</string>
+    <string name="bookings">Bookings</string>
+    <string name="no_trips_found">No trips found</string>
+    <string name="pick_a_trip_date">Pick a trip date</string>
+    <string name="booked">Booked</string>
+    <string name="not_booked">Not Booked</string>
+    <string name="apply_and_search">Apply and Search</string>
+    <string name="search">Search</string>
+    <string name="destination_name">Destination Name</string>
+    <string name="_01_jan_2025">01 Jan 2025</string>
+    <string name="your_saved_items">Your Saved Items</string>
+    <string name="trips_in_palestine">Trips in Palestine</string>
+    <string name="enjoy_the_views_of_palestine">Enjoy the views of Palestine!</string>
+    <string name="recommended_trips">Recommended Trips</string>
+    <string name="expand_trips">Expand Trips</string>
+    <string name="destination">Destination</string>
+    <string name="_12_12_2025">12/12/2025</string>
+    <string name="dot">•</string>
+    <string name="adventure">Adventure</string>
+    <string name="description">Description</string>
+    <string name="a_beautiful_trip_to">A beautiful trip to...</string>
+    <string name="price_per_person">Price Per Person</string>
+    <string name="book_trip">Book Trip</string>
+    <string name="send_a_comment_for_us_about_the_trip">Send a comment for us about the trip</string>
+    <string name="submit_comment">Submit Comment</string>
+    <string name="your_travels">Your Travels</string>
 </resources>

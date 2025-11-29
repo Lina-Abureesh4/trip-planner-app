@@ -35,7 +35,7 @@
                 android:id="@+id/txtNoResults"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="No trips found"
+                android:text="@string/no_trips_found"
                 android:visibility="gone"
                 android:textSize="18sp"
                 android:textColor="@color/black"
@@ -56,7 +56,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#DDDDDD"
-        android:hint="Pick a trip date"
+        android:hint="@string/pick_a_trip_date"
         android:padding="10dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/btnShowFilter"
@@ -90,13 +90,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="24dp"
-            android:text="Booked" />
+            android:text="@string/booked" />
 
         <RadioButton
             android:id="@+id/rb_unbooked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Not Booked" />
+            android:text="@string/not_booked" />
 
     </RadioGroup>
 
@@ -107,8 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:onClick="searchTrips"
-        android:text="Apply and Search"
+        android:text="@string/apply_and_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radio_group" />
@@ -148,7 +147,7 @@
                     android:id="@+id/hometxtView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Home"
+                    android:text="@string/home"
                     android:textSize="12sp"
                     android:textColor="@android:color/black" />
 
@@ -175,7 +174,7 @@
                     android:id="@+id/searchtxtView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Search"
+                    android:text="@string/search"
                     android:textSize="12sp"
                     android:textColor="@android:color/black" />
             </LinearLayout>
@@ -200,7 +199,7 @@
                     android:id="@+id/savedtxtView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Saved"
+                    android:text="@string/saved"
                     android:textSize="12sp"
                     android:textColor="@android:color/black" />
             </LinearLayout>
@@ -225,7 +224,7 @@
                     android:id="@+id/bookingstxtView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bookings"
+                    android:text="@string/bookings"
                     android:textSize="12sp"
                     android:textColor="@android:color/black" />
             </LinearLayout>

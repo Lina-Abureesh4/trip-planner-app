@@ -7,18 +7,6 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!--    &lt;!&ndash; main layout &ndash;&gt;-->
-    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-    <!--        android:id="@+id/main_content"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:orientation="vertical"-->
-    <!--        android:gravity="center_horizontal"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:layout_constraintBottom_toTopOf="@id/bottom_nav_layout"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent">-->
-
     <!-- 1- Header: Logo + App Name -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header_layout"
@@ -39,7 +27,7 @@
             android:id="@+id/app_name"
             android:layout_width="65dp"
             android:layout_height="wrap_content"
-            android:text="Trips in Palestine"
+            android:text="@string/trips_in_palestine"
             android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:text="Enjoy the views of Palestine!"
+        android:text="@string/enjoy_the_views_of_palestine"
         android:textAlignment="center"
         android:textColor="#CA1919"
         android:textSize="22sp"
@@ -172,7 +160,7 @@
             android:id="@+id/trips_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Recommended Trips"
+            android:text="@string/recommended_trips"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -185,7 +173,7 @@
             android:layout_height="15dp"
             android:layout_marginEnd="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:contentDescription="Expand Trips"
+            android:contentDescription="@string/expand_trips"
             android:scaleType="fitXY"
             android:src="@drawable/ic_expand"
             app:layout_constraintEnd_toEndOf="parent"
@@ -238,7 +226,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Home"
+                android:contentDescription="@string/home"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_home" />
 
@@ -246,7 +234,7 @@
                 android:id="@+id/hometxtView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Home"
+                android:text="@string/home"
                 android:textColor="@android:color/black"
                 android:textSize="12sp" />
 
@@ -265,7 +253,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Bookings"
+                android:contentDescription="@string/bookings"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_search" />
 
@@ -273,7 +261,7 @@
                 android:id="@+id/searchtxtView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Search"
+                android:text="@string/search"
                 android:textColor="@android:color/black"
                 android:textSize="12sp" />
 
@@ -292,7 +280,7 @@
                 android:layout_width="30dp"
                 android:layout_height="20dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Saved"
+                android:contentDescription="@string/saved"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_save" />
 
@@ -300,7 +288,7 @@
                 android:id="@+id/savedtxtView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Saved"
+                android:text="@string/saved"
                 android:textColor="@android:color/black"
                 android:textSize="12sp" />
 
@@ -319,7 +307,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Bookings"
+                android:contentDescription="@string/bookings"
                 android:scaleType="centerCrop"
                 android:src="@drawable/ic_book" />
 
@@ -327,7 +315,7 @@
                 android:id="@+id/bookingstxtView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bookings"
+                android:text="@string/bookings"
                 android:textColor="@android:color/black"
                 android:textSize="12sp" />
 

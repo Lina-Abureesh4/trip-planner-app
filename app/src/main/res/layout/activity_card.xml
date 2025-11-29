@@ -63,7 +63,7 @@
                 android:id="@+id/txtDestination"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Destination"
+                android:text="@string/destination"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="#000" />
@@ -79,20 +79,20 @@
                     android:id="@+id/txtDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="12/12/2025"
+                    android:text="@string/_12_12_2025"
                     android:textColor="#777" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" • "
+                    android:text="@string/dot"
                     android:textColor="#777" />
 
                 <TextView
                     android:id="@+id/txtCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Adventure"
+                    android:text="@string/adventure"
                     android:textColor="#777" />
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -100,7 +100,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Description"
+                android:text="@string/description"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:paddingTop="20dp" />
@@ -109,7 +109,7 @@
                 android:id="@+id/txtDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="A beautiful trip to..."
+                android:text="@string/a_beautiful_trip_to"
                 android:textColor="#555"
                 android:textSize="15sp"
                 android:lineSpacingExtra="4dp"
@@ -136,7 +136,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Price Per Person"
+                        android:text="@string/price_per_person"
                         android:textColor="#777"
                         android:textSize="14sp" />
 
@@ -155,7 +155,7 @@
                     android:id="@+id/btnBook"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Book Trip"
+                    android:text="@string/book_trip"
                     android:textAllCaps="false"
                     android:background="@drawable/rounded_button"
                     android:textColor="@android:color/white"
@@ -174,7 +174,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:inputType="text"
-                android:hint="Send a comment for us about the trip"
+                android:hint="@string/send_a_comment_for_us_about_the_trip"
                 android:padding="8dp"
                 android:paddingStart="16dp"
                 android:background="@drawable/edittext_bg"/>
@@ -184,7 +184,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Submit Comment"/>
+                android:text="@string/submit_comment"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

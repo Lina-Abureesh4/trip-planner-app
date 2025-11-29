@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Your Travels"
+            android:text="@string/your_travels"
             android:textSize="23sp"
             android:textStyle="bold" />
 
@@ -67,7 +67,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/ic_home"
-                android:contentDescription="Home"
+                android:contentDescription="@string/home"
                 android:scaleType="centerCrop"
                 android:background="?attr/selectableItemBackgroundBorderless" />
 
@@ -75,7 +75,7 @@
                 android:id="@+id/hometxtView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Home"
+                android:text="@string/home"
                 android:textSize="12sp"
                 android:textColor="@android:color/black" />
 
@@ -94,7 +94,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/ic_search"
-                android:contentDescription="Bookings"
+                android:contentDescription="@string/bookings"
                 android:scaleType="centerCrop"
                 android:background="?attr/selectableItemBackgroundBorderless" />
 
@@ -102,7 +102,7 @@
                 android:id="@+id/searchtxtView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Search"
+                android:text="@string/search"
                 android:textSize="12sp"
                 android:textColor="@android:color/black" />
 
@@ -121,7 +121,7 @@
                 android:layout_width="30dp"
                 android:layout_height="20dp"
                 android:src="@drawable/ic_save"
-                android:contentDescription="Saved"
+                android:contentDescription="@string/saved"
                 android:scaleType="centerCrop"
                 android:background="?attr/selectableItemBackgroundBorderless" />
 
@@ -129,7 +129,7 @@
                 android:id="@+id/savedtxtView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Saved"
+                android:text="@string/saved"
                 android:textSize="12sp"
                 android:textColor="@android:color/black" />
 
@@ -148,7 +148,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/ic_book"
-                android:contentDescription="Bookings"
+                android:contentDescription="@string/bookings"
                 android:scaleType="centerCrop"
                 android:background="?attr/selectableItemBackgroundBorderless" />
 
@@ -156,7 +156,7 @@
                 android:id="@+id/bookingstxtView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bookings"
+                android:text="@string/bookings"
                 android:textSize="12sp"
                 android:textColor="@android:color/black" />
 
