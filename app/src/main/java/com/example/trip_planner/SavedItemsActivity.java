@@ -46,7 +46,6 @@ public class SavedItemsActivity extends AppCompatActivity {
         setRecyclerView();
 
         ImageButton homeImgBtn = findViewById(R.id.homeImgBtn);
-        ImageButton savedImgBtn = findViewById(R.id.savedImgBtn);
         ImageButton bookingsImgBtn = findViewById(R.id.bookingsImgBtn);
         ImageButton searchImgBtn = findViewById(R.id.searchImgBtn);
 

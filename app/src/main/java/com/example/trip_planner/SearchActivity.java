@@ -64,7 +64,6 @@ public class SearchActivity extends AppCompatActivity {
         ImageButton homeImgBtn = findViewById(R.id.homeImgBtn);
         ImageButton savedImgBtn = findViewById(R.id.savedImgBtn);
         ImageButton bookingsImgBtn = findViewById(R.id.bookingsImgBtn);
-        ImageButton searchImgBtn = findViewById(R.id.searchImgBtn);
         btnShowFilter = findViewById(R.id.btnShowFilter);
         btnSearchTrips = findViewById(R.id.btnSearchTrips);
 

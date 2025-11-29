@@ -75,6 +75,7 @@ public class CardActivity extends AppCompatActivity {
         txtDate.setText(sdf.format(trip.getDate()));
 
         imgTrip.setImageResource(trip.getImageID());
+        imgTrip.setOnClickListener(v -> openImage(trip.getImageID()));
 
         if (trip.isSaved()) {
             btnSave.setImageResource(R.drawable.ic_save_black);
@@ -126,6 +127,12 @@ public class CardActivity extends AppCompatActivity {
             saveTripsToPrefs();
             finish();
         });
+    }
+
+    private void openImage(int imageID) {
+        Intent intent = new Intent(this, ImageViewerActivity.class);
+        intent.putExtra("image_id", imageID);
+        startActivity(intent);
     }
 
     @Override

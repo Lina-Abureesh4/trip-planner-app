@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -45,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         getAllTrips();
         setRecyclerView();
 
-        ImageButton homeImgBtn = findViewById(R.id.homeImgBtn);
         ImageButton savedImgBtn = findViewById(R.id.savedImgBtn);
         ImageButton bookingsImgBtn = findViewById(R.id.bookingsImgBtn);
         ImageButton searchImgBtn = findViewById(R.id.searchImgBtn);
@@ -73,7 +73,26 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, SearchActivity.class));
             finish();
         });
+
+        ImageView imgDome = findViewById(R.id.imgDome);
+        ImageView imgBatir = findViewById(R.id.imgBattir);
+        ImageView imgOldJaffa = findViewById(R.id.imgJaffa);
+        ImageView imgAkka = findViewById(R.id.imgAkka);
+        ImageView imgLogo = findViewById(R.id.app_logo);
+
+        imgDome.setOnClickListener(v -> openImage("dome_of_the_rock"));
+        imgBatir.setOnClickListener(v -> openImage("batir"));
+        imgOldJaffa.setOnClickListener(v -> openImage("old_jaffa"));
+        imgAkka.setOnClickListener(v -> openImage("akka"));
+        imgLogo.setOnClickListener(v -> openImage("logo"));
     }
+
+    private void openImage(String imageName) {
+        Intent intent = new Intent(this, ImageViewerActivity.class);
+        intent.putExtra("image_name", imageName);
+        startActivity(intent);
+    }
+
 
     @Override
     public void onStart(){

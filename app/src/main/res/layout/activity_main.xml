@@ -89,6 +89,7 @@
             android:weightSum="3">
 
             <ImageView
+                android:id="@+id/imgDome"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="4dp"
@@ -96,9 +97,12 @@
                 android:background="@drawable/rounded_corners"
                 android:clipToOutline="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/dome_of_the_rock" />
+                android:src="@drawable/dome_of_the_rock"
+                android:clickable="true"
+                android:focusable="true"/>
 
             <ImageView
+                android:id="@+id/imgBattir"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="4dp"
@@ -106,7 +110,9 @@
                 android:background="@drawable/rounded_corners"
                 android:clipToOutline="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/batir" />
+                android:src="@drawable/batir"
+                android:clickable="true"
+                android:focusable="true"/>
         </LinearLayout>
 
         <!-- Row 2 -->
@@ -117,6 +123,7 @@
             android:weightSum="3">
 
             <ImageView
+                android:id="@+id/imgJaffa"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="4dp"
@@ -124,9 +131,12 @@
                 android:background="@drawable/rounded_corners"
                 android:clipToOutline="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/old_jaffa" />
+                android:src="@drawable/old_jaffa"
+                android:clickable="true"
+                android:focusable="true"/>
 
             <ImageView
+                android:id="@+id/imgAkka"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="4dp"
@@ -134,7 +144,9 @@
                 android:background="@drawable/rounded_corners"
                 android:clipToOutline="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/akka" />
+                android:src="@drawable/akka"
+                android:clickable="true"
+                android:focusable="true"/>
         </LinearLayout>
 
     </LinearLayout>
