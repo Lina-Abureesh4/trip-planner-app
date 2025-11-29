@@ -32,11 +32,7 @@ public class CardActivity extends AppCompatActivity {
     private Button btnBook, btnComment;
     private EditText edtComment;
     private ImageView btnBack, btnSave;
-    private SharedPreferences prefs;
-    private Gson gson;
     private List<Trip> tripsFromPrefs;
-    private RecyclerView recycler;
-    private List<Trip> savedTrips;
 
 
     @Override

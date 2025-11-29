@@ -27,11 +27,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private SharedPreferences prefs;
-    private Gson gson;
     private List<Trip> tripsFromPrefs;
     private RecyclerView recycler;
-    EditText edtTripDate;
     ImageButton btnExpand;
 
     @Override
@@ -54,30 +51,28 @@ public class MainActivity extends AppCompatActivity {
         ImageButton searchImgBtn = findViewById(R.id.searchImgBtn);
         btnExpand = findViewById(R.id.btnExpand);
 
-
-        // Home Activity
-        homeImgBtn.setOnClickListener(v -> {
-        });
-
         // Saved Activity
         savedImgBtn.setOnClickListener(v -> {
             startActivity(new Intent(this, SavedItemsActivity.class));
+            finish();
         });
 
         // Bookings Activity
         bookingsImgBtn.setOnClickListener(v -> {
             startActivity(new Intent(this, BookingsActivity.class));
+            finish();
         });
 
         // Search Activity
         searchImgBtn.setOnClickListener(v -> {
             startActivity(new Intent(this, SearchActivity.class));
+            finish();
         });
 
         btnExpand.setOnClickListener(v -> {
             startActivity(new Intent(this, SearchActivity.class));
+            finish();
         });
-
     }
 
     @Override

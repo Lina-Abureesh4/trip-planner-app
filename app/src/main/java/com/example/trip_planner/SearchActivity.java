@@ -33,8 +33,6 @@ import java.util.List;
 
 public class SearchActivity extends AppCompatActivity {
 
-    private SharedPreferences prefs;
-    private Gson gson;
     private List<Trip> tripsFromPrefs;
     private RecyclerView recycler;
     Button edtTripDate;
@@ -75,27 +73,29 @@ public class SearchActivity extends AppCompatActivity {
         rbUnbooked = findViewById(R.id.rb_unbooked);
         rbUnbooked.setSelected(true);
 
-
         // Home Activity
         homeImgBtn.setOnClickListener(v -> {
             startActivity(new Intent(this, MainActivity.class));
+            finish();
         });
 
         // Saved Activity
         savedImgBtn.setOnClickListener(v -> {
             startActivity(new Intent(this, SavedItemsActivity.class));
+            finish();
         });
 
         // Bookings Activity
         bookingsImgBtn.setOnClickListener(v -> {
             startActivity(new Intent(this, BookingsActivity.class));
-        });
-
-        // Search Activity
-        searchImgBtn.setOnClickListener(v -> {
+            finish();
         });
 
         btnSearchTrips.setOnClickListener(v -> filterTripsByDate());
+        btnShowFilter.setOnClickListener(v -> {
+            btnSearchTrips.performClick();
+            btnSearchTrips.setPressed(true);
+        });
     }
 
     public void manageDatePicker(){

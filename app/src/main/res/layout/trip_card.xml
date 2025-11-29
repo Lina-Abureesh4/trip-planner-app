@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="370dp"
     android:layout_margin="8dp"
     app:cardCornerRadius="16dp"
     app:cardElevation="4dp">
@@ -82,4 +82,5 @@
 
     </FrameLayout>
 </androidx.cardview.widget.CardView>
+
 

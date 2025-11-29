@@ -27,8 +27,6 @@ import java.util.List;
 
 public class SavedItemsActivity extends AppCompatActivity {
 
-    private SharedPreferences prefs;
-    private Gson gson;
     private List<Trip> tripsFromPrefs;
     private RecyclerView recycler;
     private List<Trip> savedTrips;
@@ -55,20 +53,19 @@ public class SavedItemsActivity extends AppCompatActivity {
         // Home Activity
         homeImgBtn.setOnClickListener(v -> {
             startActivity(new Intent(this, MainActivity.class));
-        });
-
-        // Saved Activity
-        savedImgBtn.setOnClickListener(v -> {
+            finish();
         });
 
         // Bookings Activity
         bookingsImgBtn.setOnClickListener(v -> {
             startActivity(new Intent(this, BookingsActivity.class));
+            finish();
         });
 
         // Search Activity
         searchImgBtn.setOnClickListener(v -> {
             startActivity(new Intent(this, SearchActivity.class));
+            finish();
         });
     }
     private void getSavedTrips() {
